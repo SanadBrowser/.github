@@ -1,0 +1,28 @@
+name: Feature proposal · اقتراح ميزة
+description: Explain a user problem and a testable improvement.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem · المشكلة التي يواجهها المستخدم
+      description: Describe who is affected and the current limitation.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior · السلوك المقترح
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria · كيف نتحقق من نجاحها؟
+      description: Specific observable behavior; avoid unmeasurable promises such as absolute security or universal speed.
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Alternatives and privacy/security effects · البدائل وأثر الخصوصية والأمان
