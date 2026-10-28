@@ -1,0 +1,52 @@
+name: Ad blocking or site compatibility · الحجب وتوافق المواقع
+description: Distinguish an advertisement, playback defect and service/login wall.
+title: "[Compatibility]: "
+body:
+  - type: markdown
+    attributes:
+      value: Prefer the application issue tracker for runtime reports. Do not share cookies, account names, private watch history, access-bearing URLs or downloaded videos. Ad blocking is best effort.
+  - type: input
+    id: versions
+    attributes:
+      label: App/Electron/Chromium versions and OS · الإصدارات والنظام
+    validations:
+      required: true
+  - type: dropdown
+    id: surface
+    attributes:
+      label: Surface · الواجهة المستخدمة
+      options:
+        - Installed Sanad Windows browser
+        - Development desktop build
+        - Hosted Sanad page inside another browser
+    validations:
+      required: true
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: Observed symptom · ما الذي ظهر؟
+      options:
+        - Advertisement before or during playback
+        - Display advertisement
+        - Ordinary content or playback broken
+        - Sign-in or bot-check wall
+        - Consent or region restriction
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Sanitized public URL · رابط عام دون بيانات حساسة
+      description: Remove authentication/query tokens. Do not include a private video or account URL.
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps and observed result · الخطوات والنتيجة
+      description: Include protection on/off state, normal/private mode, and whether playback actually began. Do not bypass service or browser security checks.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized screenshot or measurements · صورة أو قياسات منقّحة
+      description: An empty ad counter or blocked login page does not prove ad-free playback.
