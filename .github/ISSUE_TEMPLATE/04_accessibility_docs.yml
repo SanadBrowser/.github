@@ -1,0 +1,32 @@
+name: Accessibility, Arabic or docs · الوصول والعربية والتوثيق
+description: Report an interface barrier, RTL issue or documentation correction.
+title: "[Community]: "
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area · المجال
+      options:
+        - Keyboard or assistive technology
+        - Arabic or RTL layout
+        - Documentation or policy clarification
+        - Organization profile or broken link
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Affected page/control · الصفحة أو العنصر
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Barrier or correction · العائق أو التصحيح
+      description: Describe steps, expected and actual behavior. For accessibility, include OS, version, zoom/language and assistive technology if relevant. No diagnosis or medical history is needed.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence or suggested wording · دليل منقّح أو صياغة مقترحة
