@@ -1,0 +1,38 @@
+name: Bug report · بلاغ عطل
+description: A reproducible browser or community-tooling defect.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: Search existing reports first. Browser runtime defects belong in the application tracker. Report vulnerabilities privately using SECURITY.md. Do not attach a full browser profile or sensitive logs.
+  - type: input
+    id: version
+    attributes:
+      label: App version and operating system · الإصدار والنظام
+      description: Include About version information for a browser defect; use N/A for community tooling.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce · خطوات التكرار
+      placeholder: "1. Open…\n2. Select…\n3. Observe…"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result · النتيجة الفعلية
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result · النتيجة المتوقعة
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence · أدلة دون بيانات شخصية
+      description: Minimal public URL, local fixture or cropped screenshot. Remove tokens, names and unrelated tabs.
